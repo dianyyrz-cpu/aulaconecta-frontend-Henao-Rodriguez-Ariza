@@ -72,3 +72,17 @@ El equipo trabajará siguiendo los siguientes pasos:
 # Conclusión
 
 El flujo de trabajo acordado permite que los integrantes colaboren de manera organizada, manteniendo un historial de cambios claro y reduciendo el riesgo de errores durante el desarrollo del proyecto.
+
+
+# Registro de Comandos
+git commit	¿Qué nodo nuevo apareció y dónde quedó apuntando la rama?
+Apareció un nuevo nodo (commit) en el historial y la rama actual pasó a apuntar a ese nuevo commit, convirtiéndose en el más reciente.
+
+git branch	¿Qué se creó y sobre qué commit quedó ubicado?
+Se creó una nueva rama que quedó ubicada sobre el commit en el que se encontraba HEAD en ese momento, apuntando inicialmente al mismo nodo que la rama actual.
+
+git checkout	¿Qué cambió al moverse a otra rama?	
+Cambió la rama activa y HEAD pasó a apuntar a la rama seleccionada, permitiendo trabajar sobre ella sin modificar las demás ramas.
+
+git merge	¿Qué historias de trabajo quedaron integradas?	
+Se integraron los cambios de la rama que se estaba fusionando con la rama actual, fusionando el historial y las modificaciones de ambas ramas.
