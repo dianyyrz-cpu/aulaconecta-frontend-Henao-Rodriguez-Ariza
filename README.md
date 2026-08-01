@@ -66,7 +66,7 @@ El equipo establece las siguientes reglas de colaboración:
 - Cada commit deberá tener un mensaje claro y descriptivo.
 - Antes de integrar cambios en main será obligatorio realizar una revisión mediante Pull Request.
 - Las observaciones realizadas durante la revisión deberán corregirse antes de la fusión.
-
+- Cada mensaje de commit deberá describir claramente el cambio realizado para facilitar el seguimiento del historial del proyecto.
 ---
 
 # Criterios de calidad
