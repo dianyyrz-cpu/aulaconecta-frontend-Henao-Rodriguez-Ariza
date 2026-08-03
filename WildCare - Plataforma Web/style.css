@@ -3,12 +3,12 @@
 =========================================================== */
 
 :root {
-  --proto-bg: #FFF9F2;
-  --proto-header: #F5D1C3;
+  --proto-bg: #F8F6F1;
+  --proto-header: #E9F3EC;
   --proto-orange-light: #FCDCC2;
   --proto-orange-shadow: #EBBCA4;
-  --proto-orange-text: #E06E38;
-  --proto-orange-dark: #C2501E;
+  --proto-orange-text: #D97745;
+  --proto-orange-dark: #A85A34;
   --proto-text-brown: #4F3525;
   --proto-text-muted: #8C6F5E;
   --bg-white-card: #FFFFFF;
@@ -17,7 +17,7 @@
 /* Accesibilidad y Carga */
 * {
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -63,6 +63,7 @@ h1, h2, h3, h4, .display-font {
   width: 100%;
   max-width: 250px;
   box-shadow: inset 0 2px 4px rgba(0,0,0,0.03);
+  border:1px solid #e8e8e8;
 }
 
 .search-pill-proto input {
@@ -75,7 +76,7 @@ h1, h2, h3, h4, .display-font {
 }
 
 .search-icon-btn {
-  background-color: #E6A93C;
+  background-color: #DF9B28;
   border: none;
   color: #FFF;
   width: 32px;
@@ -115,7 +116,7 @@ h1, h2, h3, h4, .display-font {
   background-color: var(--proto-orange-light);
   border-radius: 35px;
   padding: 45px;
-  box-shadow: 14px 14px 0px var(--proto-orange-shadow);
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -152,13 +153,14 @@ h1, h2, h3, h4, .display-font {
   display: inline-block;
   box-shadow: 0 5px 15px rgba(224, 110, 56, 0.3);
   border: none;
-  transition: all 0.2s ease;
+  transition: all .3s ease;
 }
 
 .btn-wc-proto:hover {
   background-color: var(--proto-orange-dark);
   color: white;
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(217,119,69,.35);
 }
 
 /* Branding Rotado del Hero Derecho */
@@ -250,3 +252,28 @@ h1, h2, h3, h4, .display-font {
 .bg-purple { background-color: #8A70D6 !important; }
 .text-cafe-suave { color: var(--proto-text-muted); }
 .section-gap { margin-top: 5rem; }
+
+.search-pill-proto:focus-within{
+  border-color:#D97745;
+  box-shadow:0 0 0 4px rgba(217,119,69,.12);
+}
+.nav-links-proto a{
+  position:relative;
+  transition:.25s;
+}
+.nav-links-proto a::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:-4px;
+  width:0;height:2px;
+  background:#D97745;
+  transition:.3s;
+}
+.nav-links-proto a:hover::after,
+.nav-links-proto a.active::after{width:100%;}
+.card-white{
+  border-radius:24px;
+}
+.card-white:hover{
+  box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
